@@ -14,6 +14,7 @@ int playerCount = 1;
 boolean gameStarted = false;
 boolean nextScreen = false;
 PImage backgroundImage;
+// this object was intended to be the image that will appear when the score of the player is displayed.
 int startTime; 
 int elapsed; 
 boolean isRunning = false;

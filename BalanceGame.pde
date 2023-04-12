@@ -26,13 +26,16 @@ AudioPlayer backgroundd;
 Minim background;
 
 void setup() {
-  port = new Serial(this, "/dev/ttyACM0", 9600);
+  port = new Serial(this, "/dev/ttyACM0", 9600); 
+  // specify that port that you want to use in the second argument of this function
   minim = new Minim(this);
   background = new Minim(this);
   backgroundd = minim.loadFile("/home/ridha/BalanceGame/backgroundd.wav");
+  // specify the audio that will make the atmosphere of the game.
   //player = minim.loadFile("/home/ridha/BalanceGame/click.wav");
   
   backgroundImage = loadImage("/home/ridha/BalanceGame/Untitled-1.jpg");
+  // specify the background image of the game
   
   size(1920, 1080);
   textAlign(CENTER, CENTER);

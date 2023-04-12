@@ -127,6 +127,7 @@ void draw() {
     text("Balance Game", width/2, height/2 - 100);
   } else if (nextScreen) {
     // Draw the "next page" text
+    // if you want to navigate to another screen, specify the components of that screen here.
     
 }
 }
